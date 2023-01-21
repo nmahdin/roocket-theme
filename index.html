@@ -3,25 +3,87 @@
 
 <head>
     <title>هدر</title>
-    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- get css -->
     <link rel="stylesheet" href="assets/css/all.css">
     <link rel="stylesheet" href="assets/css/all.min.css">
     <link rel="stylesheet" href="assets/css/bootstrap.rtl.css">
-
-
-
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- get js -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
     <title>Bootstrap Example</title>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-
-
-
 </head>
 
 <body class="container">
+
+    <!-- start header -->
+    <!-- start min header -->
     <div class="header">
-        <form class="search-form">
+        <nav class="navbar mobile-nav">
+            <div class="container-fluid">
+                <button class="navbar-toggler box-border-none" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+
+
+
+
+
+                    <div class="offcanvas-body">
+
+
+                        <form class="search-form-mobile">
+                            <button type="submit" class="search-go">
+                                <i class="fa-duotone fa-magnifying-glass search-icon"></i>
+                            </button>
+
+                            <input name="search" type="text" placeholder="دنبال چی میگردی ؟" class="search">
+
+
+                        </form>
+
+
+                        <ul class="text-align-initial navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Link</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Dropdown
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+
+        <img src="assets/img/logo.png" class="img-fluid logo-header" alt="لوگوی سایت" width="120px" height="100px">
+
+
+        <form class="m-auto width-full di-none">
             <button type="submit" class="search-go">
                 <i class="fa-duotone fa-magnifying-glass search-icon"></i>
             </button>
@@ -30,7 +92,8 @@
 
 
         </form>
-        <div class="dis-flex">
+
+        <div class="dis-flex mr-10px">
             <div class="header-icons">
                 <i class="fa-duotone fa-basket-shopping-simple"></i>
             </div>
@@ -39,80 +102,74 @@
 
         <div class="dropdown">
             <button class="header-icons" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    <i class="fa-duotone fa-user"></i>
-            
+                <i class="fa-duotone fa-user"></i>
+
             </button>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">تنطیمات حساب</a></li>
-              <li><a class="dropdown-item" href="#">آدرس ها</a></li>
-              <li><a class="dropdown-item" href="#">علاقمندی ها</a></li>
-              <li><a class="dropdown-item" href="#">حروج از حساب</a></li>
+                <li><a class="dropdown-item" href="#">تنطیمات حساب</a></li>
+                <li><a class="dropdown-item" href="#">آدرس ها</a></li>
+                <li><a class="dropdown-item" href="#">علاقمندی ها</a></li>
+                <li><a class="dropdown-item" href="#">حروج از حساب</a></li>
             </ul>
-          </div>
-          
-
+        </div>
+       <!-- end min header -->
+       <!-- start bottom header -->
     </div>
     <div class="bottom-header">
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary bhr">
             <div class="container-fluid">
-              <a class="navbar-brand" href="#">Navbar</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Dropdown
-                    </a>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">Action</a></li>
-                      <li><a class="dropdown-item" href="#">Another action</a></li>
-                      <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">خانه</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">فروشگاه</a>
+                        </li>
+                        <li class="nav-item dropdown">
+
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                <span class="align-items dis-flex">
+                                    <span class="ml7">
+                                        زیر منو
+                                    </span>
+                                    <span class="">
+                                        <i class="fa-regular fa-angle-down"></i>
+                                    </span>
+
+                                </span>
+
+                            </a>
+
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">سبد خرید</a></li>
+                                <li><a class="dropdown-item" href="#">ارتباط با ما</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">تماس با ما</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled">محصول جدید (بزودی)</a>
+                        </li>
                     </ul>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link disabled">Disabled</a>
-                  </li>
-                </ul>
-                <form class="d-flex" role="search">
-                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                  <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
-              </div>
+                </div>
             </div>
-          </nav>
+        </nav>
     </div>
+        <!-- end bottom header -->
+    <!-- end header -->
 
 
 
 
-    
 </body>
 
-
-
-
-
-
-
-
-
-
-
-
-<head>
-    <html lang="fa" dir="rtl">
-
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    </html>
+</html>
