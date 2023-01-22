@@ -3,16 +3,16 @@
     font-display: swap;
     font-family: iranyekanBakh;
     font-weight: 400;
-    src: url(fonts/Yekan-Bakh-FaNum-04-Regular.eot);
-    src: url(fonts/Yekan-Bakh-FaNum-04-Regular.eot) format("embedded-opentype"), url(fonts/Yekan-Bakh-FaNum-04-Regular.woff) format("woff"), url(fonts/Yekan-Bakh-FaNum-04-Regular.ttf) format("truetype")
+    src: url(.../fonts/Yekan-Bakh-FaNum-04-Regular.eot);
+    src: url(.../fonts/Yekan-Bakh-FaNum-04-Regular.eot) format("embedded-opentype"), url(.../fonts/Yekan-Bakh-FaNum-04-Regular.woff) format("woff"), url(.../fonts/Yekan-Bakh-FaNum-04-Regular.ttf) format("truetype")
 }
 
 @font-face {
     font-display: swap;
     font-family: iranyekanBakh;
     font-weight: 500;
-    src: url(fonts/Yekan-Bakh-FaNum-05-Medium.eot);
-    src: url(fonts/Yekan-Bakh-FaNum-05-Medium.eot) format("embedded-opentype"), url(fonts/Yekan-Bakh-FaNum-05-Medium.woff) format("woff"), url(fonts/Yekan-Bakh-FaNum-05-Medium.ttf) format("truetype")
+    src: url(.../fonts/Yekan-Bakh-FaNum-05-Medium.eot);
+    src: url(.../fonts/Yekan-Bakh-FaNum-05-Medium.eot) format("embedded-opentype"), url(fonts/Yekan-Bakh-FaNum-05-Medium.woff) format("woff"), url(fonts/Yekan-Bakh-FaNum-05-Medium.ttf) format("truetype")
 }
 
 @font-face {
@@ -49,6 +49,10 @@ src: url(fonts/Yekan-Bakh-FaNum-08-Fat.eot) format("embedded-opentype"), url(fon
 /* --- end roots --- */
 
 /* --- start general --- */
+.dropdown-item {
+    font-family: iranyekanBakh;
+}
+
 body {
     background: #f2f3f5 !important;
 }
