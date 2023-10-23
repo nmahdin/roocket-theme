@@ -49,7 +49,7 @@
     background: var(--color-site);
     color: #ffffff;
 }
-.bottom-header, .footer , mobile-nav , form , .dropdown-menu, .course-item-title , .course-item-dis , .course-item-pri {
+.bottom-header, .footer , mobile-nav , form , .dropdown-menu, .course-item-title , .course-item-dis , .course-item-pri , .course-items-main {
     font-family: iranyekan;
 }
 
@@ -323,35 +323,62 @@ button.navbar-toggler {
 
 }
 .course-items-main {
-    background: #0dcaf0;
+    background: #ffffff;
     border-radius: 15px;
     margin-top: 70px;
     margin-bottom: 20px;
+    width: 310px;
 }
 .course-items-img {
     border-radius: 30px;
-    padding: 10px;
-    width: 470px;
+    padding: 15px;
+    width: 310px;
     margin-top: -70px;
+    transition: all 0.3s;
 }
+
 .course-item-title {
-    color: #1a1e21;
+    color: #393c3f;
     font-size: 21px;
-    font-weight: 600;
+    font-weight: 700;
     text-decoration: none;
     padding: 10px;
     padding-top: 15px;
     padding-right: 20px;
+    transition: all 0.3s;
 }
+
+.course-item-title:hover {
+    color: var(--color-site);
+    transition: all 0.3s;
+}
+
 .course-item-dis {
     color: #2b3035;
     padding: 10px 20px 0px 20px;
 }
 .course-item-pri {
-    color: #24292f;
+    color: #383c40;
     font-size: 25px;
-    font-weight: 800;
+    font-weight: 700;
     padding: 10px;
+}
+
+.course-item-call {
+    color: var(--color-site);
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center !important;
+    padding: 10px;
+    transition: all 0.3s;
+}
+.course-item-call:hover {
+    color: #2b3035;
+    transition: all 0.3s;
+}
+
+.course-item-call-1 {
+    align-items: center;
 }
 /* --- end course items el --- */
 
